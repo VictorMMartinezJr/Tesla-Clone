@@ -11,3 +11,66 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.impact-report {
+  padding: 1rem 0;
+  text-align: center;
+}
+.impact-report a {
+  color: rgb(26, 26, 26);
+}
+
+/*     NAVIGATION     */
+#nav {
+  height: 8vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.skip {
+  position: absolute;
+  top: 110%;
+  left: 0%;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  color: grey;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+}
+.skip:focus {
+  opacity: 1;
+  pointer-events: all;
+  outline: 2px solid grey;
+  outline-offset: 5px;
+  border-radius: 10px;
+}
+.tesla-logo {
+  height: 15px;
+}
+.tesla-logo-a:focus {
+  outline: 2px solid grey;
+  outline-offset: 5px;
+  border-radius: 10px;
+}
+.btn-menu {
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  border: none;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.btn-menu:focus {
+  outline: 2px solid grey;
+  outline-offset: 2px;
+}
