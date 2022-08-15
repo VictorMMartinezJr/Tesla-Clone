@@ -67,7 +67,7 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
-.nav_content.fade-in {
+.nav_content.fade {
   opacity: 1;
 }
 .nav_logo {
@@ -163,6 +163,8 @@ body {
   font-family: "GothamLight", sans-serif;
   width: 80%;
   font-size: 0.9rem;
+}
+.section_p--model-3 {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.5s ease-in-out 1.5s;
@@ -176,6 +178,8 @@ body {
   justify-content: center;
   width: 90%;
   flex: 1;
+}
+.section_btns--model-3 {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.5s ease-in-out 1.5s;
@@ -202,14 +206,18 @@ body {
 }
 
 /** Text animations **/
-.section_title--model_3.fade-in {
+.section_title--model_3.fade {
   opacity: 1;
   transform: translateY(0);
 }
-.section_p.fade-in,
-.section_btns.fade-in {
+.section_p.fade,
+.section_btns.fade {
   opacity: 1;
   transform: translateY(0);
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 @keyframes bouncing {
   /* Down arrow animation */
