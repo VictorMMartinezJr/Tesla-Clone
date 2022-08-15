@@ -144,6 +144,7 @@ body {
   list-style: none;
   font-weight: 400;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .right_links {
   display: none;
@@ -365,5 +366,6 @@ body {
   }
   .right_link {
     margin-right: 1rem;
+    cursor: pointer;
   }
 }
