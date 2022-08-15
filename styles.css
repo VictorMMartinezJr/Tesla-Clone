@@ -31,7 +31,7 @@ body {
 /**   NAVIGATION   **/
 /********************/
 #nav {
-  height: 8vh;
+  height: 5vh;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -51,7 +51,7 @@ body {
   position: fixed;
   background-color: white;
   width: 100%;
-  height: 8vh;
+  height: 5vh;
 }
 .impact_report a {
   color: rgb(26, 26, 26);
@@ -63,7 +63,7 @@ body {
   align-items: center;
   width: 100%;
   position: relative;
-  top: 10vh;
+  top: 6vh;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -119,7 +119,7 @@ body {
 .nav_links {
   position: absolute;
   height: 100vh;
-  width: 85%;
+  width: 300px;
   background-color: white;
   right: 0;
   top: 0px;
@@ -144,6 +144,9 @@ body {
   list-style: none;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+.right_links {
+  display: none;
 }
 /********************/
 /**      MAIN      **/
@@ -246,7 +249,7 @@ body {
 }
 .fade-in {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 @keyframes bouncing {
   /* Down arrow animation */
@@ -305,5 +308,62 @@ body {
 @media screen and (min-width: 300px) {
   .section_p {
     width: 100%;
+  }
+}
+@media screen and (min-width: 375px) {
+  .section {
+    padding-top: 9rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section_text {
+    margin-top: 5rem;
+  }
+  .section_btns {
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 7rem;
+    flex: 2;
+  }
+  .section_btn {
+    width: 300px;
+  }
+  .section_btn--dark {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #nav {
+    padding: 0 3rem;
+  }
+  .nav_links {
+    flex-direction: row;
+    position: static;
+    transform: translateX(0);
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    overflow: auto;
+  }
+  .nav_link {
+    margin-bottom: 0;
+  }
+  .btn_close {
+    display: none;
+  }
+  .desktop-hidden {
+    display: none;
+  }
+  .btn_menu {
+    display: none;
+  }
+  .right_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  .right_link {
+    margin-right: 1rem;
   }
 }
