@@ -26,28 +26,45 @@
 
 body {
   font-family: "GothamMedium", sans-serif;
+  overflow: auto;
 }
-
-.impact-report {
-  font-family: "GothamLight", sans-serif;
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.impact-report a {
-  color: rgb(26, 26, 26);
-}
-
-/*     NAVIGATION     */
+/********************/
+/**   NAVIGATION   **/
+/********************/
 #nav {
   height: 8vh;
   width: 100%;
   position: fixed;
   z-index: 1;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  outline: 2px solid white;
+  padding: 0 1rem;
+}
+/* Impact Report */
+.impact-report {
+  font-family: "GothamLight", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 8vh;
+}
+.impact-report a {
+  color: rgb(26, 26, 26);
+}
+/* Nav content */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 10vh;
 }
 .nav-logo {
   display: flex;
@@ -56,6 +73,7 @@ body {
   position: relative;
 }
 .skip {
+  /* Hidden link for screen readers */
   position: absolute;
   top: 110%;
   left: 0%;
@@ -95,27 +113,36 @@ body {
   outline-offset: 2px;
 }
 
-/*     MAIN     */
+/********************/
+/**      MAIN      **/
+/********************/
 .section {
-  height: 92vh;
-  padding-top: 4rem;
+  height: 100vh;
+  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   position: relative;
+  background-position: center;
+  background-size: cover;
 }
 .section-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 8.5rem;
 }
-.section-car-model {
-  font-size: 2.3rem;
+.section-title {
   font-weight: 400;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.model-title {
+  font-size: 2.3rem;
+}
+.solar-title {
+  font-size: 1.8rem;
 }
 .section-p {
   font-family: "GothamLight", sans-serif;
@@ -133,7 +160,7 @@ body {
 }
 .section-btn {
   border-radius: 20px;
-  padding: 0.6rem 0;
+  padding: 0.9rem 0;
   margin-top: 1rem;
   border: none;
   font-family: inherit;
@@ -149,11 +176,10 @@ body {
   height: 17px;
   position: absolute;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   animation: bouncing 1s infinite;
 }
 @keyframes bouncing {
+  /* Down arrow animation */
   0% {
     transform: translateY(0);
   }
@@ -170,8 +196,25 @@ body {
     transform: translateY(0);
   }
 }
+/* Backgrounds for each section */
 .model-3 {
   background-image: url(images/model-3.jpg);
-  background-position: center;
-  background-size: cover;
+}
+.model-y {
+  background-image: url(images/model-y.jpg);
+}
+.model-s {
+  background-image: url(images/model-s.jpg);
+}
+.model-x {
+  background-image: url(images/model-x.jpg);
+}
+.solar-panels {
+  background-image: url(images/solar-panels.jpg);
+}
+
+@media screen and (min-width: 300px) {
+  .section-p {
+    width: 100%;
+  }
 }
