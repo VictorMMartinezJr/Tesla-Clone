@@ -116,6 +116,35 @@ body {
   outline: 2px solid grey;
   outline-offset: 2px;
 }
+.nav_links {
+  position: absolute;
+  height: 100vh;
+  width: 85%;
+  background-color: white;
+  right: 0;
+  top: 0px;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.nav_links.active {
+  transform: translateX(0);
+}
+.btn_close {
+  align-self: end;
+  padding: 0.5rem;
+  margin: 1rem;
+  background: none;
+  border: none;
+}
+.nav_link {
+  padding-left: 2rem;
+  list-style: none;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
 /********************/
 /**      MAIN      **/
 /********************/
