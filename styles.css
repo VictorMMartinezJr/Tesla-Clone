@@ -26,7 +26,6 @@
 
 body {
   font-family: "GothamMedium", sans-serif;
-  overflow: auto;
 }
 /********************/
 /**   NAVIGATION   **/
@@ -115,8 +114,15 @@ body {
 /********************/
 /**      MAIN      **/
 /********************/
+#main_content {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
 .section {
   height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
@@ -205,7 +211,7 @@ body {
 }
 /* Model Y */
 .model_y {
-  background-image: url(images/model-y.jpg);
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70");
 }
 /* Model S */
 .model_s {
@@ -213,11 +219,11 @@ body {
 }
 /* Model X */
 .model_x {
-  background-image: url(images/model-x.jpg);
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ddc135ed-1638-40fb-8ab1-f8045059ecef/bvlatuR/std/4096x2560/Homepage-Model-X-Desktop-LHD");
 }
 /* Solar Panels */
 .solar_panels {
-  background-image: url(images/solar-panels.jpg);
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/16b04537-a4be-4bf9-8637-86862a858da8/bvlatuR/std/2880x1800/_25-HP-SolarPanels-D");
 }
 /* Solar Roof */
 .solar_roof {
