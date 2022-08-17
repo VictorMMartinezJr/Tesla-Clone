@@ -146,6 +146,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: scroll;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
 }
 .nav_links--mobile.active {
   transform: translateX(0);
@@ -330,7 +331,9 @@ body {
 .accessories {
   background-image: url(images/accessories-1.jpg);
 }
-
+/********************/
+/**  Media Queries **/
+/********************/
 @media screen and (min-width: 300px) {
   .section_p {
     width: 100%;
@@ -350,9 +353,6 @@ body {
 @media screen and (min-width: 540px) {
   .section {
     padding-top: 8.5rem;
-  }
-  .model_3 {
-    background-image: url("images/model-3-desktop.jpg");
   }
 }
 @media screen and (min-width: 768px) {
