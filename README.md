@@ -8,9 +8,8 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://res.cloudinary.com/victormtzcodes/image/upload/v1660768037/README/teslaclone-victormtzcodes.netlify.app__1_zcxphz.png" alt="project-screenshot" width="600" height="400/">
-
-<img src="https://res.cloudinary.com/victormtzcodes/image/upload/v1660768044/README/teslaclone-victormtzcodes.netlify.app__iPhone_6_7_8_Plus_dvyxst.png" alt="project-screenshot" width="250" height="400/">
+<img src="https://user-images.githubusercontent.com/93169407/185237923-c4ec263f-8d91-4bba-9ec0-1e1709df8055.png" />
+<img src="https://user-images.githubusercontent.com/93169407/185237920-2fde93bd-5b47-402f-b6dc-17b4b1191b3a.png" height="600"/>
 
   
   
