@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;600&display=swap");
-
+:root {
+  --black: #000;
+  --white: #f2f2f2;
+  --gray: grey;
+  --lighter-gray: rgba(194, 193, 193, 0.25);
+  --hover-white: rgb(212, 212, 212);
+  --btn-dark: #191919;
+}
 *,
 *::before,
 *::after {
@@ -31,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: white;
+  background-color: var(--white);
   width: 100%;
   height: 6vh;
   font-size: 0.9rem;
@@ -40,7 +47,7 @@ body {
   filter: blur(2px);
 }
 .impact_report a {
-  color: rgb(26, 26, 26);
+  color: var(--black);
   text-decoration: none;
   position: relative;
 }
@@ -83,7 +90,7 @@ body {
   left: 0%;
   font-size: 0.8rem;
   white-space: nowrap;
-  color: grey;
+  color: var(--gray);
   text-decoration: none;
   opacity: 0;
   pointer-events: none;
@@ -108,12 +115,13 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 12px;
   border: none;
-  background: rgba(194, 193, 193, 0.25);
+  color: var(--black);
+  background: var(--lighter-gray);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 .btn_menu:focus {
-  outline: 2px solid grey;
+  outline: 2px solid var(--gray);
   outline-offset: 2px;
 }
 .btn_close {
@@ -129,7 +137,7 @@ body {
   height: 15px;
 }
 .btn_close:hover {
-  background-color: rgb(212, 212, 212);
+  background-color: var(--hover-white);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
@@ -138,7 +146,7 @@ body {
   position: absolute;
   height: 100vh;
   width: 240px;
-  background-color: white;
+  background-color: var(--white);
   right: 0;
   top: 0px;
   transform: translateX(100%);
@@ -159,7 +167,7 @@ body {
   padding: 0.5rem 0.8rem;
 }
 .nav_link:hover {
-  background-color: rgb(212, 212, 212);
+  background-color: var(--hover-white);
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
@@ -251,11 +259,12 @@ body {
   cursor: pointer;
 }
 .section_btn--dark {
-  background-color: #191919;
-  color: #f2f2f2;
+  background-color: var(--btn-dark);
+  color: var(--white);
 }
 .section_btn--light {
-  background-color: #e0e1e4;
+  background-color: var(--white);
+  color: var(--btn-dark);
 }
 .arrow_down {
   height: 17px;
