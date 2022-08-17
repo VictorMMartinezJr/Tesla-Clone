@@ -240,7 +240,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   width: 90%;
   flex: 1;
 }
