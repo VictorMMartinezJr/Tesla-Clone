@@ -332,6 +332,30 @@ body {
   background-image: url(images/accessories-1.jpg);
 }
 /********************/
+/**    Footer      **/
+/********************/
+#footer {
+  max-height: 10vh;
+}
+.footer_nav_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.footer_nav_link {
+  list-style: none;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.footer_nav_link--margin {
+  margin-bottom: 5rem;
+}
+.footer_nav_link--desktop {
+  display: none;
+}
+/********************/
 /**  Media Queries **/
 /********************/
 @media screen and (min-width: 300px) {
@@ -387,6 +411,23 @@ body {
   }
   .section_btn--dark {
     margin-right: 1rem;
+  }
+  #footer {
+    margin-bottom: 5rem;
+  }
+  .footer_nav_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer_nav_link {
+    margin-right: 1rem;
+  }
+  .footer_nav_link--margin {
+    margin-bottom: 0rem;
+  }
+  .footer_nav_link--desktop {
+    display: inline-block;
   }
 }
 @media screen and (min-width: 1024px) {
